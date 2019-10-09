@@ -56,7 +56,7 @@ const App = () => {
       type: 'SEARCH_MOVIES_REQUEST'
     });
 
-    fetch(`https://www.omdbapi.com/?s=${searchValue}&apikep=d7778d32`)
+    fetch(`https://www.omdbapi.com/?s=${searchValue}&apikey=d7778d32`)
       .then(response => response.json())
       .then(jsonResponse => {
         if (jsonResponse.Response === 'True') {
